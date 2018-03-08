@@ -1,4 +1,4 @@
-# Speakit
+# Speakit :speaker:
 
 A command line tool to enforce a set of conventions writting slides in markdown. This plain text format makes it easy to share and replicate content by means of copy-paste and also makes it possible to export to PDF for presentation purposes.
 
