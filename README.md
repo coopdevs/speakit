@@ -11,3 +11,21 @@ This project is heavily inspired on [Deckset](https://www.decksetapp.com).
 Speakit requires:
 
 * Bash >= 4
+
+## Usage
+
+To create a presentation run:
+
+```shell
+$ speakit "my presentation"
+```
+
+This will generate the following directory structure:
+
+```
+my_presentation
+├── README.md
+├── images/
+├── notes.md
+└── slides.md
+```
