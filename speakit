@@ -8,7 +8,7 @@ touch notes.md
 echo "# ${NAME}" > slides.md
 
 # Write README's template
-cat <<FILE >> README.md
+cat <<FILE > README.md
 # ${NAME}
 
 Recursos de la sessió *${NAME}* del <!--- Nom de l'esdeveniment, meetup, curs, etc. --> de <!--- Nom de l'organitzador --> del <!--- data -->.
@@ -22,4 +22,9 @@ Recursos de la sessió *${NAME}* del <!--- Nom de l'esdeveniment, meetup, curs, 
 Amb [Speakit](https://github.com/coopdevs/speakit). El contingut s'escriu en
 [Markdown](https://ca.wikipedia.org/wiki/Markdown) i Speakit ho formata com
 diapositives.
+FILE
+
+# Add a .gitignore
+cat <<FILE > .gitignore
+*.pdf
 FILE
