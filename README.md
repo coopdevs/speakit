@@ -5,3 +5,9 @@ A command line tool to enforce a set of conventions writting slides in markdown.
 By making these conventions executable and applying a predefined style you only need to focus on the content you want to share with the audience. Preparing presentations is hard enough, let machines do the rest.
 
 This project is heavily inspired on [Deckset](https://www.decksetapp.com).
+
+## Installation
+
+Speakit requires:
+
+* Bash >= 4
