@@ -1,8 +1,15 @@
 #!/usr/bin/env bash
 
 NAME=$1
+DIR=${NAME// /_}
 
-# Create all files and folders in the presentation
+# Create presentation's directory
+mkdir $DIR
+
+# Change to it
+pushd $DIR > /dev/null
+
+# Create the whole directory structure
 mkdir images/
 touch notes.md
 echo "# ${NAME}" > slides.md
@@ -26,3 +33,6 @@ FILE
 cat <<FILE > .gitignore
 *.pdf
 FILE
+
+# Come back to the working directory
+popd > /dev/null
