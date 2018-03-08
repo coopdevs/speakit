@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+NAME=$1
+
+mkdir images/
+touch notes.md
+touch slides.md
+echo "# ${NAME}" >> slides.md
+
+cat <<FILE >> README.md
+# ${NAME}
+
+Recursos de la sessió *${NAME}* del <!--- Nom de l'esdeveniment, meetup, curs, etc. --> de <!--- Nom de l'organitzador --> del <!--- data -->.
+
+  * [Diapositives](slides.md)
+  * [Diapositives en PDF]()
+  <!--- Links a material extra com exercicis -->
+
+## Com has fet les diapositives?
+
+Amb [Deckset](https://www.decksetapp.com/). El contingut s'escriu en
+[Markdown](https://ca.wikipedia.org/wiki/Markdown) i Deckset ho formata com
+diapositives.
+FILE
+
