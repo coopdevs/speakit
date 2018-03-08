@@ -13,7 +13,13 @@ pushd $DIR > /dev/null
 # Create the whole directory structure
 mkdir images/
 touch notes.md
-echo "# ${NAME^}" > slides.md
+
+# Write slides.md template
+cat <<FILE > slides.md
+# ${NAME^}
+
+<!-- Write here the content of your slides using markdown -->
+FILE
 
 # Write README's template
 cat <<FILE > README.md

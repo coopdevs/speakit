@@ -29,3 +29,5 @@ my_presentation
 ├── notes.md
 └── slides.md
 ```
+
+Now you can start working on your slides in `slides.md`.
