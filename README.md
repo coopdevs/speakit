@@ -12,7 +12,12 @@ Speakit requires:
 
 * Bash >= 4
 
+Speakit uses [Marp](https://yhatt.github.io/marp/) to export the slides to PDF, which also provides a preview. Follow [its installation instructions](https://github.com/yhatt/marp#install.)
+
 ## Usage
+
+
+### Setup
 
 To create a presentation run:
 
@@ -31,3 +36,8 @@ my_presentation
 ```
 
 Now you can start working on your slides in `slides.md`.
+
+### Export to PDF
+
+To export the slides to PDF open your `slides.md` in Marp and click on File > Export
+Slides as PDF...
