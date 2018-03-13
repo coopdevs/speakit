@@ -14,6 +14,12 @@ Speakit requires:
 
 Speakit uses [Marp](https://yhatt.github.io/marp/) to export the slides to PDF, which also provides a preview. Follow [its installation instructions](https://github.com/yhatt/marp#install.)
 
+Now you can install `speakit` running the following command:
+
+```shell
+$ wget https://raw.githubusercontent.com/coopdevs/speakit/master/install.sh | sh
+```
+
 ## Usage
 
 
