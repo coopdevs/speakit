@@ -4,24 +4,24 @@ NAME=$1
 DIR=${NAME// /_}
 DIR=${DIR,}
 
-# Create presentation's directory
+echo "==> Creating presentation's directory..."
 mkdir $DIR
 
 # Change to it
 pushd $DIR > /dev/null
 
-# Create the whole directory structure
+echo "==> Creating directory structure..."
 mkdir images/
 touch notes.md
 
-# Write slides.md template
+echo "==> Writting slides template..."
 cat <<FILE > slides.md
 # ${NAME^}
 
 <!-- Write here the content of your slides using markdown -->
 FILE
 
-# Write README's template
+echo "==> Writting README template..."
 cat <<FILE > README.md
 # ${NAME^}
 
@@ -43,3 +43,5 @@ FILE
 
 # Come back to the working directory
 popd > /dev/null
+
+echo "==> Done!"
